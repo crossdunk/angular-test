@@ -2,8 +2,8 @@
 <html ng-app='angular_test'>
   <head>
     <title>Angular Test</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="content-language" content="zh-tw">
     <style>
@@ -29,8 +29,8 @@
 
     <hr />
 
-    <section >
-      <form class="form-inline" ng-submit='send()' ng-controller='saveController'  >
+    <section ng-controller='saveController'>
+      <form class="form-inline" ng-submit='submit()' >
         <div class="form-group">
           <label class="sr-only" for="exampleInputEmail3" ng-model='email' name='email'>Email address</label>
           <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Email">
@@ -40,16 +40,13 @@
           <input type="text" class="form-control" id="exampleInputPassword3" placeholder="Password">
         </div>
         <button type="submit" class="btn btn-default">Sign in</button>
-        <div>
        電子信箱 {{ emails }}
-      </div>
       </form>
-      
     </section>
 
   </body>
   <script language="javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
   <script type="text/javascript" src="controller.js"></script>
 </html>
