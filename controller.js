@@ -1,4 +1,5 @@
-var app = angular.module('submit_test', []);
+var app = angular.module('angular_test', []);
+
 app.controller('save', function (){
       this.emails = [];
       this.passwrods = [];
