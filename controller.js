@@ -1,10 +1,11 @@
 var app = angular.module('angular_test', []);
 
-app.controller('save', function (){
+app.controller('saveController', function (){
       this.emails = [];
       this.passwrods = [];
       this.email = '';
       this.passwrod = '';
+
       this.send = function(){
         console.log('cool');
         if(this.email=='' || !this.password=='') {
@@ -14,4 +15,5 @@ app.controller('save', function (){
           this.passwords.push(password);
         }
       }
+      
 });
